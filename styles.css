@@ -1,0 +1,732 @@
+/* Styles pour le site */
+
+/* Réinitialisation des marges et des rembourrages*/
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    background-color: #000000
+}
+
+/* Style de base*/ 
+body {
+    font-family: 'Martian Mono', monospace;
+}
+
+naha{
+    padding: 0;
+    margin: 0;
+    background-color: #00000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/* Barre de navigation */
+header {
+    background-color: #00000000;
+    color: #0c2ec4;
+    padding: 10px 0;
+}
+
+/*Styling Buttons*/
+.login-button{
+    background-color: transparent;
+    border: 1.5px solid #0c2ec4;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    margin-left: 2vw;
+    font-size: 1rem;
+    cursor: pointer;
+ 
+ }
+ .login-button:hover {
+    color: #0033ff;
+    background-color: #0097fc;
+    border:1.5px solid #0c2ec4;
+    transition: all ease-in-out 350ms;
+ }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: #0c2ec4;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #0c2ec4;
+    text-decoration: none;
+}
+
+/* Section de la page d'accueil */
+.hero {
+    text-align: center;
+    color: #ffffff;
+    padding: 100px 0;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+
+
+n1{
+    color: #0c2ec4;
+    font-size: 150px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer
+  }
+  n1 span{
+    transition: .5s linear
+  }
+  n1:hover span:nth-child(1){
+    margin-right: 5px
+  }
+  n1:hover span:nth-child(2){
+    margin-left: 30px
+  }
+  n1:hover span{
+    color: #0400ff;
+    text-shadow: 0 0 10px #0400ff,
+                 0 0 20px #0400ff, 
+                 0 0 40px #0400ff;
+  }
+
+  n2{
+    color: #0c2ec4;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer
+  }
+.cta-button {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+}
+
+/* Autres sections */
+.about, .services, .contact {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.about h2, .services h2, .contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.services ul {
+    list-style: none;
+}
+
+.services li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+texte {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000000;
+  }
+  
+  m {
+    position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+  .btn {
+    position: relative;
+    display: inline-block;
+    padding: 20px 30px;
+    color: #0c2ec4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background: #0313f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #032ff4,
+                0 0 25px #0b0ebd,
+                0 0 50px #032ff4,
+                0 0 100px #2a1ed5;
+  }
+  .btn span {
+    position: absolute;
+    display: block;
+  }
+  .btn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #0313f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  .btn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #032ff4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  .btn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #0327f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  .btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #0313f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+ 
+/*contact*/
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: 'Martian Mono', monospace;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #6670cc;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #4b49cc; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#666dcc;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#4956cc; }
+
+/* Ajoutez des styles spécifiques selon vos préférences */
+
+
+/*social*/
+/* Styles pour les boutons sociaux */
+.social-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-button:hover {
+    background-color: #0426e7fb;
+    transform: scale(1.1);
+}
+
+/* Styles pour les icônes */
+.fa {
+    font-size: inherit;
+    vertical-align: middle;
+}
+.fa-facebook::before {
+    content: "\f09a"; /* Code de l'icône Facebook */
+}
+.fa-twitter::before {
+    content: "\f099"; /* Code de l'icône Twitter */
+}
+.fa-instagram::before {
+    content: "\f16d"; /* Code de l'icône Instagram */
+}
+
+
+t {
+  color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer
+}
+
+
+.container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.container .box
+{
+  position: relative;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 30px;
+  transition: 0.5s;
+}
+
+.container .box::before
+{
+  content:' ';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+}
+
+.container .box::after
+{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 50;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+  filter: blur(30px);
+}
+
+.container .box:hover:before,
+.container .box:hover:after
+{
+  transform: skewX(0deg);
+  left: 20px;
+  width: calc(100% - 90px);
+  
+}
+
+.container .box:nth-child(1):before,
+.container .box:nth-child(1):after
+{
+  background: linear-gradient(315deg, #0011ff, #0077ff)
+}
+
+.container .box:nth-child(2):before,
+.container .box:nth-child(2):after
+{
+  background: linear-gradient(315deg, #03a9f4, #0004ff)
+}
+
+.container .box:nth-child(3):before,
+.container .box:nth-child(3):after
+{
+  background: linear-gradient(315deg, #0703ff, #00e1ff)
+}
+
+.container .box span
+{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.container .box span::before
+{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.1s;  
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08)
+}
+
+.container .box:hover span::before
+{
+  top: -50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+.container .box span::after
+{
+  content:'';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.5s;
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  animation-delay: -1s;
+}
+
+.container .box:hover span:after
+{
+  bottom: -50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+@keyframes animate
+{
+  0%, 100%
+  {
+    transform: translateY(10px);
+  }
+  
+  50%
+  {
+    transform: translate(-10px);
+  }
+}
+
+.container .box .content
+{
+  position: relative;
+  left: 0;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1;
+  transform: 0.5s;
+  color: #fff;
+}
+
+.container .box:hover .content
+{
+  left: -25px;
+  padding: 60px 40px;
+}
+
+.container .box .content h2
+{
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.container .box .content p
+{
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+
+.container .box .content a
+{
+  display: inline-block;
+  font-size: 1.1em;
+  color: #111;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.container .box .content a:hover
+{
+  background: #ffcf4d;
+  border: 1px solid rgba(255, 0, 88, 0.4);
+  box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+}
+
+/*skills*/
+
+/* Styles pour la section des compétences */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f8f800;
+}
+
+.skillhtml {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #312d2d3f;
+  border-radius: 10px;
+  border:0.5px solid #c4460c;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skillhtml img {
+  width: 120x;
+  height: 120px;
+}
+
+.skillhtml h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.skillhtml p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+
+.skillcss {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #312d2d3f;
+  border-radius: 10px;
+  border:0.5px solid #0c3dc4;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skillcss img {
+  width: 120x;
+  height: 120px;
+}
+
+.skillcss h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.skillcss p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.skilljs {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #312d2d3f;
+  border-radius: 10px;
+  border:0.5px solid #c1c40c;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skillcss img {
+  width: 120x;
+  height: 120px;
+}
+
+.skillcss h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.skillcss p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+html2{
+  color: #c4460c;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer
+}
+
+css2{
+  color: #0c3dc4;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer
+}
+
+js2{
+  color: #c1c40c;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer
+}
+
